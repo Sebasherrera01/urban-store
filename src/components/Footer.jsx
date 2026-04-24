@@ -1,10 +1,12 @@
+import { Globe, Share2, Heart } from "lucide-react"
+
 export default function Footer() {
     return (
         <footer className="bg-[#222222] px-6 pt-[55px] pb-[38px] text-white">
             <div className="mx-auto max-w-[1400px]">
                 <div className="grid grid-cols-1 gap-10 md:grid-cols-4">
                     <div>
-                        <h3 className="text-[22px] font-bold uppercase">
+                        <h3 className="text-[22px] font-extrabold uppercase">
                             URBAN THREADS
                         </h3>
 
@@ -15,7 +17,7 @@ export default function Footer() {
                     </div>
 
                     <div>
-                        <h4 className="text-[18px] font-bold uppercase">ENLACES</h4>
+                        <h4 className="text-[18px] font-extrabold uppercase">ENLACES</h4>
 
                         <ul className="mt-5 space-y-3 text-[19px] text-[#e5e7eb]">
                             <li>Inicio</li>
@@ -25,7 +27,7 @@ export default function Footer() {
                     </div>
 
                     <div>
-                        <h4 className="text-[18px] font-bold uppercase">AYUDA</h4>
+                        <h4 className="text-[18px] font-extrabold uppercase">AYUDA</h4>
 
                         <ul className="mt-5 space-y-3 text-[19px] text-[#e5e7eb]">
                             <li>Guía de tallas</li>
@@ -36,12 +38,20 @@ export default function Footer() {
                     </div>
 
                     <div>
-                        <h4 className="text-[18px] font-bold uppercase">SÍGUENOS</h4>
+                        <h4 className="text-[18px] font-extrabold uppercase">SÍGUENOS</h4>
 
-                        <div className="mt-6 flex gap-5 text-[28px] text-[#d1d5db]">
-                            <span>♥</span>
-                            <span>◉</span>
-                            <span>▢</span>
+                        <div className="mt-6 flex gap-4">
+                            <a className="flex h-[42px] w-[42px] items-center justify-center bg-[#1f2937] text-white">
+                                <Globe size={18} />
+                            </a>
+
+                            <a className="flex h-[42px] w-[42px] items-center justify-center bg-[#1f2937] text-white">
+                                <Share2 size={18} />
+                            </a>
+
+                            <a className="flex h-[42px] w-[42px] items-center justify-center bg-[#1f2937] text-white">
+                                <Heart size={18} />
+                            </a>
                         </div>
                     </div>
                 </div>

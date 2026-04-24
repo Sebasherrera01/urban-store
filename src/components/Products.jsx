@@ -1,65 +1,91 @@
 export default function Products() {
     const products = [
-    { name: "Camiseta Básica Urban", desc: "Algodón 100% orgánico", price: "€29" },
-    { name: "Jeans Slim Fit", desc: "Denim premium stretch", price: "€89" },
-    { name: "Sudadera Oversize", desc: "Algodón French Terry", price: "€65" },
-    { name: "Chaqueta Bomber", desc: "Nylon resistente al agua", price: "€120" },
-    { name: "Gorra Snapback", desc: "Bordado premium", price: "€35" },
-    { name: "Zapatillas Urban", desc: "Suela de goma antideslizante", price: "€95" },
+        {
+            name: "Camiseta Básica Urban",
+            desc: "Algodón 100% orgánico",
+            price: "€29",
+            icon: "👕",
+        },
+        {
+            name: "Jeans Slim Fit",
+            desc: "Denim premium stretch",
+            price: "€89",
+            icon: "👖",
+        },
+        {
+            name: "Sudadera Oversize",
+            desc: "Algodón French Terry",
+            price: "€65",
+            icon: "🧥",
+        },
+        {
+            name: "Chaqueta Bomber",
+            desc: "Nylon resistente al agua",
+            price: "€120",
+            icon: "🧥",
+        },
+        {
+            name: "Gorra Snapback",
+            desc: "Bordado premium",
+            price: "€35",
+            icon: "🧢",
+        },
+        {
+            name: "Zapatillas Urban",
+            desc: "Suela de goma antideslizante",
+            price: "€95",
+            icon: "👟",
+        },
     ]
 
     return (
-    <section className="bg-[#f4f4f4] py-[70px] px-6 text-[#0f172a]">
-        <div className="mx-auto max-w-[1200px]">
+        <section className="bg-[#f4f4f4] px-6 py-[70px]">
+            <div className="mx-auto max-w-[1200px] text-center">
 
-        {/* HEADER */}
-        <div className="text-center">
-            <h2 className="text-[38px] font-bold uppercase tracking-[2px]">
-            NUESTRA COLECCIÓN
-            </h2>
+                <h2 className="text-[34px] font-extrabold uppercase tracking-[2px] text-[#0f172a]">
+                    NUESTRA COLECCIÓN
+                </h2>
 
-            <p className="mt-5 text-[20px] font-light text-[#475569]">
-            Estilo urbano para cada ocasión
-            </p>
-        </div>
-
-        {/* GRID */}
-        <div className="mt-[40px] grid grid-cols-1 gap-[32px] sm:grid-cols-2 lg:grid-cols-4">
-            {products.map((product) => (
-            <article
-                key={product.name}
-                className="bg-white shadow-[0_8px_24px_rgba(0,0,0,0.08)]"
-            >
-              {/* IMAGEN */}
-                <div className="flex h-[320px] items-center justify-center bg-[#e5e7eb]">
-                <div className="h-[60px] w-[60px] rounded-md bg-gradient-to-b from-[#e9d5ff] to-[#a78bfa]" />
-                </div>
-
-              {/* CONTENIDO */}
-                <div className="px-[28px] pt-[30px] pb-[28px]">
-                <h3 className="text-[20px] font-bold leading-tight">
-                    {product.name}
-                </h3>
-
-                <p className="mt-3 text-[16px] font-light text-[#475569]">
-                    {product.desc}
+                <p className="mt-4 text-[18px] text-[#64748b]">
+                    Estilo urbano para cada ocasión
                 </p>
 
-                <div className="mt-6 flex items-center justify-between">
-                    <span className="text-[26px] font-bold">
-                    {product.price}
-                    </span>
+                <div className="mt-[50px] grid grid-cols-1 gap-[30px] sm:grid-cols-2 md:grid-cols-4">
+                    {products.map((product, i) => (
+                        <div key={i} className="bg-white shadow-md">
 
-                    <button className="bg-[#0f172a] px-6 py-2 text-[14px] font-semibold uppercase text-white">
-                    AÑADIR
-                    </button>
-                </div>
-                </div>
-            </article>
-            ))}
-        </div>
+                            {/* IMAGEN / ICONO */}
+                            <div className="flex h-[320px] items-center justify-center bg-[#e5e7eb]">
+                                <span className="text-[64px] grayscale opacity-70">
+                                    {product.icon}
+                                </span>
+                            </div>
 
-        </div>
-    </section>
+                            {/* INFO */}
+                            <div className="px-6 py-5 text-left">
+                                <h3 className="text-[18px] font-extrabold text-[#0f172a]">
+                                    {product.name}
+                                </h3>
+
+                                <p className="mt-2 text-[14px] text-[#64748b]">
+                                    {product.desc}
+                                </p>
+
+                                <div className="mt-5 flex items-center justify-between">
+                                    <span className="text-[20px] font-extrabold text-[#0f172a]">
+                                        {product.price}
+                                    </span>
+
+                                    <button className="bg-[#0f172a] px-5 py-2 text-[13px] font-extrabold uppercase text-white">
+                                        AÑADIR
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
     )
 }
