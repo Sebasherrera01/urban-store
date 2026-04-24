@@ -7,11 +7,11 @@ export default function Navbar() {
     const linkInactive = "text-[#cbd5e1] hover:text-white"
 
     return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-[#2b2b2b]">
-        <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 py-5">
+    <header className="sticky top-0 z-50 border-b border-white/10 bg-[#1a1a1a]">
+        <div className="mx-auto flex max-w-[1400px] items-center justify-between px-20 py-4">
         
         {/* LOGO */}
-        <h1 className="text-[22px] font-extrabold tracking-wide text-white">
+        <h1 className="text-[22px] font-bold tracking-wide text-white">
             URBAN THREADS
         </h1>
 

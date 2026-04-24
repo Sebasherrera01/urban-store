@@ -14,7 +14,7 @@ export default function Products() {
 
         {/* HEADER */}
         <div className="text-center">
-            <h2 className="text-[38px] font-extrabold uppercase tracking-[2px]">
+            <h2 className="text-[38px] font-bold uppercase tracking-[2px]">
             NUESTRA COLECCIÓN
             </h2>
 
@@ -37,7 +37,7 @@ export default function Products() {
 
               {/* CONTENIDO */}
                 <div className="px-[28px] pt-[30px] pb-[28px]">
-                <h3 className="text-[20px] font-extrabold leading-tight">
+                <h3 className="text-[20px] font-bold leading-tight">
                     {product.name}
                 </h3>
 
@@ -46,7 +46,7 @@ export default function Products() {
                 </p>
 
                 <div className="mt-6 flex items-center justify-between">
-                    <span className="text-[26px] font-extrabold">
+                    <span className="text-[26px] font-bold">
                     {product.price}
                     </span>
 

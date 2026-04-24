@@ -30,7 +30,7 @@ export default function Features() {
                 </div>
 
               {/* TITULO */}
-                <h3 className="mt-6 text-[20px] font-extrabold uppercase">
+                <h3 className="mt-6 text-[20px] font-bold uppercase">
                 {item.title}
                 </h3>
 

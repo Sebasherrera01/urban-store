@@ -1,50 +1,53 @@
 export default function Contact() {
     return (
-        <section className="bg-[#151515] py-[90px] px-6 text-white">
-            <div className="mx-auto max-w-[1200px]">
-
-                {/* HEADER */}
+        <section className="bg-[#f4f4f4] px-6 py-[80px] text-[#111827]">
+            <div className="mx-auto max-w-[900px]">
                 <div className="text-center">
-                    <h2 className="text-[36px] font-extrabold uppercase tracking-[2px]">
+                    <h2 className="text-[38px] font-extrabold uppercase tracking-[2px]">
                         CONTACTO
                     </h2>
 
-                    <p className="mt-4 text-[20px] font-light text-[#cbd5e1]">
+                    <p className="mt-5 text-[20px] font-light text-[#475569]">
                         ¿Tienes alguna pregunta? Nos encantaría escucharte
                     </p>
                 </div>
 
-                {/* GRID */}
-                <div className="mt-[60px] grid grid-cols-1 gap-[40px] lg:grid-cols-2">
-
-                    {/* INFO */}
-                    <div className="bg-[#1f1f1f] px-[28px] py-[30px]">
-                        <h3 className="text-[20px] font-extrabold uppercase">
+                <div className="mt-[50px] grid grid-cols-1 gap-[28px] lg:grid-cols-2">
+                    <div className="bg-white px-[28px] py-[32px] shadow-[0_8px_24px_rgba(0,0,0,0.08)]">
+                        <h3 className="text-[21px] font-extrabold uppercase">
                             INFORMACIÓN DE CONTACTO
                         </h3>
 
-                        <div className="mt-6 space-y-6 text-[16px] text-[#cbd5e1]">
+                        <div className="mt-7 space-y-6 text-[16px] text-[#475569]">
                             <div>
-                                <p className="font-semibold text-white">Dirección</p>
-                                <p className="mt-1">
+                                <h4 className="text-[14px] font-extrabold uppercase text-[#111827]">
+                                    Dirección
+                                </h4>
+                                <p className="mt-2 leading-7">
                                     Calle Urban Style 123 <br />
                                     28001 Madrid, España
                                 </p>
                             </div>
 
                             <div>
-                                <p className="font-semibold text-white">Teléfono</p>
-                                <p className="mt-1">+34 91 123 45 67</p>
+                                <h4 className="text-[14px] font-extrabold uppercase text-[#111827]">
+                                    Teléfono
+                                </h4>
+                                <p className="mt-2">+34 91 123 45 67</p>
                             </div>
 
                             <div>
-                                <p className="font-semibold text-white">Email</p>
-                                <p className="mt-1">info@urbanthreads.com</p>
+                                <h4 className="text-[14px] font-extrabold uppercase text-[#111827]">
+                                    Email
+                                </h4>
+                                <p className="mt-2">info@urbanthreads.com</p>
                             </div>
 
                             <div>
-                                <p className="font-semibold text-white">Horario</p>
-                                <p className="mt-1">
+                                <h4 className="text-[14px] font-extrabold uppercase text-[#111827]">
+                                    Horario
+                                </h4>
+                                <p className="mt-2 leading-7">
                                     Lun - Vie: 9:00 - 18:00 <br />
                                     Sáb: 10:00 - 14:00
                                 </p>
@@ -52,59 +55,57 @@ export default function Contact() {
                         </div>
                     </div>
 
-                    {/* FORM */}
-                    <div className="bg-[#1f1f1f] px-[28px] py-[30px]">
-                        <h3 className="text-[20px] font-extrabold uppercase">
+                    <div className="bg-white px-[28px] py-[32px] shadow-[0_8px_24px_rgba(0,0,0,0.08)]">
+                        <h3 className="text-[21px] font-extrabold uppercase">
                             ENVÍANOS UN MENSAJE
                         </h3>
 
-                        <p className="mt-3 text-[14px] text-[#94a3b8]">
-                            Demo: Este formulario no envía datos reales.
-                        </p>
+                        <div className="mt-4 flex items-start gap-3 border-l-4 border-[#f59e0b] bg-[#fef3c7] px-4 py-3 text-[#92400e]">
+                            <p className="text-[14px] leading-6">
+                                <span className="font-bold">Demo:</span> Este es un formulario de demostración. Los mensajes no se enviarán realmente.
+                            </p>
+                        </div>
 
-                        <div className="mt-6 space-y-4">
-
-                            {/* NOMBRE / APELLIDO */}
+                        <form className="mt-6 space-y-4">
                             <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                                 <input
-                                    className="w-full bg-[#111111] px-4 py-3 text-[14px] outline-none"
+                                    className="w-full bg-[#f1f1f1] px-4 py-3 text-[14px] outline-none"
                                     placeholder="NOMBRE"
                                 />
+
                                 <input
-                                    className="w-full bg-[#111111] px-4 py-3 text-[14px] outline-none"
+                                    className="w-full bg-[#f1f1f1] px-4 py-3 text-[14px] outline-none"
                                     placeholder="APELLIDOS"
                                 />
                             </div>
 
-                            {/* EMAIL */}
                             <input
-                                className="w-full bg-[#111111] px-4 py-3 text-[14px] outline-none"
+                                className="w-full bg-[#f1f1f1] px-4 py-3 text-[14px] outline-none"
                                 placeholder="EMAIL"
                             />
 
-                            {/* SELECT */}
-                            <select className="w-full bg-[#111111] px-4 py-3 text-[14px] outline-none">
+                            <select className="w-full bg-[#f1f1f1] px-4 py-3 text-[14px] text-[#475569] outline-none">
                                 <option>Selecciona un asunto</option>
                                 <option>Consulta general</option>
                                 <option>Información de producto</option>
                                 <option>Estado de pedido</option>
                                 <option>Devoluciones</option>
+                                <option>Otro</option>
                             </select>
 
-                            {/* MENSAJE */}
                             <textarea
-                                className="w-full bg-[#111111] px-4 py-3 text-[14px] outline-none"
-                                rows="4"
+                                className="min-h-[140px] w-full bg-[#f1f1f1] px-4 py-3 text-[14px] outline-none"
                                 placeholder="MENSAJE"
                             />
 
-                            {/* BOTÓN */}
-                            <button className="mt-2 w-full bg-[#f5a000] py-3 text-[14px] font-bold uppercase text-black">
+                            <button
+                                type="button"
+                                className="w-full bg-[#000000] py-3 text-[14px] font-extrabold uppercase text-white"
+                            >
                                 ENVIAR MENSAJE
                             </button>
-                        </div>
+                        </form>
                     </div>
-
                 </div>
             </div>
         </section>

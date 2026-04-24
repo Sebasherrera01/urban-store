@@ -9,11 +9,11 @@ export default function Hero() {
         }}
     >
         <div className="mx-auto max-w-[1100px]">
-        <h2 className="text-[64px] font-extrabold leading-none text-white">
+        <h2 className="text-[64px] font-bold leading-none text-white">
             ESTILO URBANO
         </h2>
 
-        <h2 className="text-[64px] font-extrabold leading-none text-[#f4b321]">
+        <h2 className="text-[64px] font-bold leading-none text-[#f4b321]">
             REDEFINIDO
         </h2>
 
